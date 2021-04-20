@@ -1,2 +1,5 @@
+#ignore compiled objects
 *.o
+
+#ignore vscode files
 /.vscode

@@ -1,6 +1,6 @@
 // SortedList Header
 
-class SortedList{
+class SortedList : public List{
 
     public:
 
