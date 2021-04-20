@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
-using namespace std;
 
-// Specification file array-based list (“List.h”)
+// Specification file array-based list (ï¿½List.hï¿½)
+
 
 const  int  MAX_LENGTH = 50; 
 class  List {
@@ -19,7 +19,7 @@ public: 	          // Public member functions
     void Reset();
     ItemType GetNextItem();
 
-    friend ostream& operator << (ostream&, const List&);
+    friend std::ostream& operator << (std::ostream&, const List&);
 
 protected:	      // Private data members
     int length; // Number of values currently stored

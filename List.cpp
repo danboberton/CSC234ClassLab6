@@ -1,5 +1,5 @@
 // Implementation file array-based list 
-// (“List.cpp”)
+// (ï¿½List.cppï¿½)
 
 #include  <iostream>
 #include  "List.h"
@@ -73,7 +73,7 @@ void  List::Delete( /* in */  ItemType  item)
 		item != data[index])
 		index++;
 	// IF item found, move last element into 
-  //  item’s place
+  //  itemï¿½s place
 	if (index < length)
 	{
 		data[index] = data[length - 1];
@@ -122,7 +122,7 @@ void  List::SelSort()
 	}
 }
 
-ostream& operator << (ostream& os, const List& l) {
+std::ostream& operator << (std::ostream& os, const List& l) {
 	// Post: If the list is not empty, the elements are
 	//       printed on the screen in increasing order;
 	//       otherwise "The list is empty" is
@@ -130,10 +130,10 @@ ostream& operator << (ostream& os, const List& l) {
 	int index = 0;
 	List sl = l;
 	sl.Reset();
-	while (index < sl.length) {
+	while (index < sl.Length()) {
 		os << sl.GetNextItem() << " ";
 		index++;
 	}
-	os << endl;
+	os << std::endl;
 	return os;
 }

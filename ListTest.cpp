@@ -11,14 +11,14 @@ int main(int argc, char* argv[]) {
 		tempList.Insert(rand() % 100);
 
 	tempList.Reset();
-	cout << tempList;
+	std::cout << tempList;
 
-	cout <<endl;
+	std::cout << std::endl;
 
 	tempList.SelSort();
 
 	tempList.Reset();
 	for (int i = 0; i < 10; i++)
-		cout << tempList.GetNextItem() << " ";
-	cout << endl;
+		std::cout << tempList.GetNextItem() << " ";
+	std::cout << std::endl;
 }
