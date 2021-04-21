@@ -5,7 +5,8 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	List tempList;
+	SortedList tempList;
+	
 
 	for(int i = 0; i < 10; i++)
 		tempList.Insert(rand() % 100);
@@ -14,8 +15,6 @@ int main(int argc, char* argv[]) {
 	std::cout << tempList;
 
 	std::cout << std::endl;
-
-	tempList.SelSort();
 
 	tempList.Reset();
 	for (int i = 0; i < 10; i++)
